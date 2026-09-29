@@ -187,6 +187,7 @@ button.primary:disabled{ opacity:0.5; cursor:default; }
       <option value="pt">Português</option>
       <option value="it">Italiano</option>
       <option value="en">English</option>
+      <option value="es">Español</option>
     </select>
     <h1 data-i18n="appTitle">Cartão de Ponto</h1>
     <p data-i18n="loginDesc">Entre com sua conta Google para carregar (ou criar) seus dados, guardados com segurança no seu próprio Google Drive.</p>
@@ -212,6 +213,7 @@ button.primary:disabled{ opacity:0.5; cursor:default; }
         <option value="pt">Português</option>
         <option value="it">Italiano</option>
         <option value="en">English</option>
+        <option value="es">Español</option>
       </select>
       <button class="logout" id="logoutBtn" data-i18n="logout">Sair</button>
     </div>
@@ -507,6 +509,70 @@ const I18N = {
     weekdaysShort: ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],
     weekdaysFull: ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
     monthYear: (m, y, L) => `${L.monthsFull[m]} ${y}`
+  },
+  es: {
+    htmlLang: 'es',
+    appTitle: 'Tarjeta de Horario',
+    appSubtitle: 'control de horas extra',
+    loginDesc: 'Inicia sesión con tu cuenta de Google para cargar (o crear) tus datos, guardados de forma segura en tu propio Google Drive.',
+    loginBtn: 'Iniciar sesión con Google',
+    loginNote: 'Tus registros se guardan en una carpeta privada de la app dentro de tu Google Drive — nada es visible públicamente.',
+    logout: 'Salir',
+    saldoLabel: 'saldo neto del mes',
+    statWorkedLabel: 'trabajado',
+    statExpectedLabel: 'esperado',
+    statExtrasLabel: 'horas extra',
+    statReceivedLabel: 'recibido',
+    statDaysLabel: 'días registrados',
+    syncOk: 'sincronizado con Google Drive',
+    syncBusy: 'guardando…',
+    syncErr: 'error al guardar: ',
+    settingsToggle: '⚙ configurar jornada estándar',
+    setExpectedLabel: 'horas esperadas por día (HH:MM)',
+    weekdayLabel: 'días laborables de la semana',
+    saveSettingsBtn: 'Guardar configuración',
+    registrarDiaTitle: 'registrar día',
+    dataLabel: 'fecha',
+    entradaLabel: 'entrada',
+    saidaLabel: 'salida',
+    intervaloLabel: 'descanso (min)',
+    addEntryBtn: 'Agregar',
+    registrarRecebimentoTitle: 'registrar horas recibidas',
+    dataPagamentoLabel: 'fecha del pago',
+    mesReferenciaLabel: 'mes de referencia',
+    horasRecebidasLabel: 'horas recibidas (HH:MM)',
+    horasRecebidasPlaceholder: '02:00',
+    observacaoLabel: 'nota (opcional)',
+    observacaoPlaceholder: 'ej: pagado en la nómina',
+    addReceiptBtn: 'Registrar pago',
+    lancamentosMes: 'registros del mes',
+    recebimentosMes: 'pagos del mes',
+    controleMensal: 'resumen mensual',
+    thMes: 'mes', thExtras: 'extra', thRecebido: 'recibido', thSaldo: 'saldo',
+    emptyEntries: 'Aún no hay días registrados este mes.',
+    emptyReceipts: 'Aún no hay pagos registrados este mes.',
+    emptyTable: 'Aún no hay datos registrados.',
+    loading: 'Cargando…',
+    loadingDrive: 'Cargando desde Google Drive…',
+    errFillDate: 'Completa la fecha, entrada y salida.',
+    errFillReceipt: 'Completa la fecha del pago, el mes de referencia y las horas recibidas (ej: 02:00).',
+    errMinutesPositive: 'La cantidad de horas debe ser mayor que cero.',
+    errLoadDrive: 'Error al cargar desde Drive: ',
+    errSessionExpired: 'sesión expirada — inicia sesión de nuevo',
+    errDrive: 'error de Drive (',
+    errGoogleScript: 'No se pudo cargar el script de Google. Revisa tu conexión y recarga la página.',
+    errLoginFailed: 'No se pudo iniciar sesión: ',
+    stampPos: '+ POR RECIBIR',
+    stampNeg: 'RECIBIDO DE MÁS',
+    stampZero: 'SALDADO',
+    referenteA: 'referente a',
+    entryIntervalo: 'descanso',
+    entryTrabalhado: 'trabajado',
+    monthsFull: ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'],
+    monthsShort: ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'],
+    weekdaysShort: ['dom','lun','mar','mié','jue','vie','sáb'],
+    weekdaysFull: ['domingo','lunes','martes','miércoles','jueves','viernes','sábado'],
+    monthYear: (m, y, L) => `${L.monthsFull[m]} de ${y}`
   }
 };
 
